@@ -659,6 +659,9 @@ footer {
     text-align: center;
     display: none;
   }
+   .left-part{
+    flex-direction: column;
+  }
   
   .images img {
     position: static;
