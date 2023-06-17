@@ -599,6 +599,10 @@ footer {
   .contact-page-section .form-column .inner-column {
     padding: 40px 30px 20px;
   }
+  .under-text{
+    line-height:30px;
+  }
+
 
   .contact-page-section .info-column .inner-column {
     padding: 40px 25px;
