@@ -512,7 +512,8 @@ footer {
 /* Add this media query for iPhone 12 Pro */
 @media only screen and (max-device-width: 768px) {
   .mobile{
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   header {
     padding: 5vw 2vw 0;
