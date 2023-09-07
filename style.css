@@ -4,6 +4,16 @@
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
+
+#preloader{
+  background: #ffffff url(./preload.gif) no-repeat center;
+  background-size: 15%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 header {
   padding: 5vw var(--padding-inline-section) 0;
 }
