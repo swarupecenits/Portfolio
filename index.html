@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div id="preloader"></div>
     <div class="top-banner ">
         <div class="container">
             <div class="small-bold-text banner-text">"Unveiling Creative Horizons: A Journey Through My Portfolio"</div>
@@ -219,8 +220,12 @@
         <a href="#" class="hover-links">Copyright &#169; 2023 All Rights Reserved &#x1F493; Swarup Chanda</a>
 
     </footer>
-
-
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+    </script>
 
 </body>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
