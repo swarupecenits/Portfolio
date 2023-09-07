@@ -5,13 +5,20 @@
   box-sizing: border-box;
 }
 
-#preloader{
-  background: #ffffff url(./preload.gif) no-repeat center;
-  background-size: 15%;
-  height: 100vh;
+#loader {
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  position: fixed;
-  z-index: 100;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  transition: opacity 0.5s;
+  z-index: 1000;
+  
 }
 
 header {
