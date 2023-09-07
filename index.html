@@ -17,7 +17,10 @@
 </head>
 
 <body>
-    <div id="preloader"></div>
+    <div id="loader">
+        <div id="lottie-loader"></div>
+    </div>
+
     <div class="top-banner ">
         <div class="container">
             <div class="small-bold-text banner-text">"Unveiling Creative Horizons: A Journey Through My Portfolio"</div>
@@ -220,11 +223,37 @@
         <a href="#" class="hover-links">Copyright &#169; 2023 All Rights Reserved &#x1F493; Swarup Chanda</a>
 
     </footer>
+    <!-- Loader script file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js" type="text/javascript"></script>
+
     <script>
-        var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display="none";
-        })
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            setTimeout(function () {
+                loader.style.opacity = "0";
+                setTimeout(function () {
+                    loader.style.display = "none";
+                }, 3500);
+            }, 3500);
+        });
+
+        lottie.loadAnimation({
+            container: document.getElementById("lottie-loader"),
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "https://lottie.host/a62b79f4-76a3-4a6f-bdb1-d81dd57a3fac/y9Z7qYweI7.json",
+            rendererSettings: {
+                progressiveLoad: false
+            },
+            animationData: null,
+            renderer: 'canvas',
+            images: null,
+            events: {
+                complete: function () { console.log('Animation Loaded') },
+                error: function (e) { console.error(e) }
+            }
+        });
     </script>
 
 </body>
